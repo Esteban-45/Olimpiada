@@ -1,6 +1,6 @@
 <?php 
     include("conexion.php");
-    $distancia = $_GET["dis"];
+    $distancia = $_POST["dis"];
     
     actualizar($distancia);
 
@@ -13,10 +13,9 @@
         $instancia = $conexion ->prepare($sql); 
     
         if (!$instancia) {
-            echo "Error al crar el registro";
+            echo "Error al crear el registro";
         }else{
             $instancia ->execute();
-            echo "Listo";
         }
     
         $instancia = $db ->cerrar_conexion($conexion);
