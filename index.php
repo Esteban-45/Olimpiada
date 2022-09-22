@@ -6,7 +6,7 @@
     <title>Distancia</title>
 </head>
 <body>
-    <p><label>Temperatura: </label><label id="dato"></label></p>
+    <p><label>Distancia: </label><label id="dato"></label></p>
 
     <script src="jquery-3.6.1.min.js"></script>
     <script src="main.js"></script>
